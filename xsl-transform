@@ -1,0 +1,14 @@
+#!/bin/bash
+XSLTPROC="$(which xsltproc)"
+XALAN="$(which xalan)"
+if [ -x "$XALAN" ]; then
+  xalan -in "$1" -xsl "$2" -out "$3"
+else
+  if [ -x "$XSLTPROC" ]; then
+    xsltproc -o "$3" "$2" "$1"
+  else
+    echo "Could not find xsltproc or xalan in your path."
+    echo "Please install one before continuing."
+    exit 1
+  fi
+fi

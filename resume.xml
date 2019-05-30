@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<resume>
+  <contact>
+    <name>Example Person</name>
+    <!-- all of these are optional.  I don't include street addresses or
+         blog urls, for example -->
+    <street>123 Example St</street>
+    <city>Example</city>
+    <state>EX</state>
+    <zip>00000</zip>
+    
+    <phone type="cell">(000) 000-0000</phone>
+    <phone type="home">(000) 000-0000</phone>
+    <email>example@example.com</email>
+    <resumeurl>https://iarna.github.io/resume/resume.xhtml</resumeurl>
+    <blog>https://example.com</blog>
+    <portfolio>https://iarna.github.io/resume/portfolio.xhtml</portfolio>
+  </contact>
+
+  <!-- The summary section is optional:
+    You may want to exclude this here, but make sure it's in your cover letter.
+  -->
+  <summary>
+    <executive>
+      A one paragraph summary of your career.
+    </executive>
+    <wanted>
+      A brief description of what kind of job you're looking for.
+    </wanted>
+  </summary>
+
+  <!-- Skills are optional -->
+  <skills>
+    <!-- For use in buzz-word bingo, if you're in a position to be concerned about that. -->
+    <skill>
+      I can use: ABC, DEF, GHI
+    </skill>
+  </skills>
+
+  <experience>
+    <!-- Write out or abbreviate months. Never use numbers. -->
+    <job start="Mon YEAR" end="Mon YEAR">
+    <!-- If this had ancient="true", eg
+         <job start="Mon YEAR" end="Mon YEAR" ancient=true">
+         Then the description, responsibilities and achievements would be
+         hidden when printing.
+    -->
+      <company>Example, Inc</company>
+      <title>Most Recent Job Title</title>
+      <title>Previous Job Title</title>
+      <logo>logo.png</logo>
+      <location>City, ST</location>
+      <desc>
+        <p>For the unitiated, this is what this company is/does. Brief!</p>
+      </desc>
+      <!-- departure reason is optional -->
+      <departure>
+        <p>I left because blah blah blah.</p>
+      </departure> 
+      <responsibilities>
+        <p>A narrative description of what your job responsibilities. Possibly multiple paragraphs.</p>
+      </responsibilities>
+      <achievements>
+        <!-- These go in a bullet list. Call out what you accomplished and how you were awesome! One paragraph ONLY.-->
+        <achievement>
+          Designed, built and shipped XYZ.
+        </achievement>
+        <achievement>
+          Optimized gowibble, saving 1mm a year.
+        </achievement>
+      </achievements>
+    </job>
+   </experience>
+   
+   <!-- Think: LinkedIn reviews. But don't have too many of them, two or three here tops. -->
+   <quotes>
+     <quote>
+       <p>Example is awesome and you should hire them!</p>
+       — Another ExamplePerson, CEO, Example Inc
+     </quote>
+   </quotes>
+
+   <portfolio>
+     <!-- Sources show up in your contact info -->
+     <src name="Github">
+      <logo>github-icon.png</logo>
+      <name>example</name>
+      <url>https://github.com/example?utf8=%E2%9C%93&amp;tab=repositories</url>
+     </src>
+     <src name="npm">
+       <logo>npm-icon.png</logo>
+       <name>example</name>
+       <url>https://www.npmjs.com/~example</url>
+     </src>
+
+     <talk name="My Conf/Meetup/Youtube talk">
+       <desc>Brief one or two sentance description</desc>
+       <video>https://youtu.be/example</video>
+       <slides>https://example.com/talk-slides</slides>
+     </talk>
+     <talk name="Second Talk">
+       <desc>As many as you like</desc>
+       <!-- video and slides are both optional -->
+     </talk>
+     
+     <!-- these are explicitly OSS contribs, resume.xsl would need updating
+          to change that header -->
+     <!-- sort is used for ordering AND filtering.  The main resume document
+          only gets items with a sort under 30. -->
+     <item name="thing-name" type="author" sort="1">
+       <lang>Node.js</lang>
+       <desc>A description of the thing</desc>
+       <url>https://example.com/thing-name</url>
+     </item>
+     <item name="other-thing" type="patch" sort="10">
+       <lang>C</lang>
+       <desc>Another description of a thing</desc>
+       <contrib>A description of your patch</contrib>
+       <url>https://example.com/other-thing</url>
+     </item>
+   </portfolio>
+
+   <!-- The whole references section is optional. If you exclude it entirely then it won't show up. If you just
+        include an empty <references/> tag then it will emit "Available on request." -->
+   <references>
+     <reference>
+       <name>Name of Person</name>
+       <!-- Everything below here is optional, but you should include one of email or phone, obviously. XD -->
+       <title>Title</title>
+       <company>Company Name</company>
+       <location>City, ST</location>
+       <email>abc@def.ghi</email>
+       <phone>(000) 000-0000</phone>
+     </reference>
+   </references>
+ </resume>
+ 
