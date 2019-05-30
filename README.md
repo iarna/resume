@@ -28,3 +28,14 @@ with any browser.  You'll note that the print styling is quite different,
 for example, in places where text is linked, you'll find that the target URL
 is displayed instead.  While the generated PDF, with the right viewer, has
 clickable links, obviously this isn't the case when printing.
+
+## Hasn't this been done before?
+
+Stuff like this has been published before to be sure.  The very earliest
+iteration of this, which was XML plus a Perl script to generate HTML dates
+to 1997.  The XSLT version seems to date to 2003. All quite early, but I'd
+never bothered to make it public.
+
+If you found this interesting, the
+[micro formats wiki](http://microformats.org/wiki/resume-formats) has
+collected a bunch of related resources.
