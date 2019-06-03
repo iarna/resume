@@ -174,6 +174,15 @@
         float: right;
       }
 
+      .full .label {
+        float: left;
+      }
+      .full img.lang {
+        float: none;
+        left: 55em;
+        position: absolute;
+      }
+
       /* Moving the dates above the company name when we don't have enough space to do side-by-side*/
       @media screen and (max-width: 1340px) {
         .job .dates {
@@ -187,6 +196,12 @@
         .job .logo {
           max-height: 1.5em;
           margin-left: 0.25em;
+        }
+        .full img.lang {
+          float: none;
+          margin-left: 1em;
+          left: 0;
+          position: relative;
         }
       }
 

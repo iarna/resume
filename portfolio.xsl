@@ -68,13 +68,12 @@
 </xsl:template>
 
 <xsl:template name="portfolio">
+  <section class="portfolio full">
   <xsl:for-each select="portfolio/item[@type!='@meta']">
     <xsl:sort select="@sort" data-type="number" order="ascending"/>
     <xsl:sort select="@name" data-type="text" order="ascending"/>
-    <p>
-      <xsl:if test="@sort!='1500'">
-        <xsl:attribute name="class">portfolio</xsl:attribute>
-      </xsl:if>
+    <article>
+      <div class="label">
       <xsl:if test="(@type='author' or @type='@meta')"><strong><xsl:value-of select="@name"/></strong></xsl:if>
       <xsl:if test="@type!='author' and @type!='@meta'"><xsl:value-of select="@name"/></xsl:if><xsl:if test="url!=''"> (<a>
               <xsl:attribute name="href">
@@ -88,11 +87,13 @@
               <xsl:value-of select="$showurl"/>
             </a>)
       </xsl:if>
+      </div>
       <xsl:call-template name="lang"/><br/>
       <xsl:if test="desc!=''"><xsl:value-of select="desc"/></xsl:if>
       <xsl:if test="contrib!=''"><br/><xsl:value-of select="contrib"/></xsl:if>
-    </p>
+    </article>
   </xsl:for-each>
+  </section>
 </xsl:template>
 
 </xsl:stylesheet>

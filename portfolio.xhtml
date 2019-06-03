@@ -172,6 +172,15 @@
         float: right;
       }
 
+      .full .label {
+        float: left;
+      }
+      .full img.lang {
+        float: none;
+        left: 55em;
+        position: absolute;
+      }
+
       /* Moving the dates above the company name when we don't have enough space to do side-by-side*/
       @media screen and (max-width: 1340px) {
         .job .dates {
@@ -185,6 +194,12 @@
         .job .logo {
           max-height: 1.5em;
           margin-left: 0.25em;
+        }
+        .full img.lang {
+          float: none;
+          margin-left: 1em;
+          left: 0;
+          position: relative;
         }
       }
 
@@ -266,6 +281,6 @@
           display: none;
         }
       }
-    </style></head><body><div class="contact"><h2>Example Person</h2><h2>Portfolio</h2></div><div class="content"><h3>Public Speaking</h3><p class="portfolio"><strong>My Conf/Meetup/Youtube talk</strong><br />Brief one or two sentance description<br /><span class="url-text"><strong>Video:</strong><br /><a href="https://youtu.be/example">youtu.be/example</a><br /></span><span class="url-text"><strong>Slides:</strong><br /><a href="https://example.com/talk-slides">example.com/talk-slides</a><br /></span></p><p class="portfolio"><strong>Second Talk</strong><br />As many as you like<br /></p><h3>Open Source</h3><p class="portfolio"><strong>thing-name</strong> (<a href="https://example.com/thing-name">example.com/thing-name</a>)
-      <img class="lang" src="images/nodejs.png" alt="Node.js" /><br />A description of the thing</p><p class="portfolio">other-thing (<a href="https://example.com/other-thing">example.com/other-thing</a>)
-      <img class="lang" src="images/c.svg" alt="C" /><br />Another description of a thing<br />A description of your patch</p></div></body></html>
+    </style></head><body><div class="contact"><h2>Example Person</h2><h2>Portfolio</h2></div><div class="content"><h3>Public Speaking</h3><p class="portfolio"><strong>My Conf/Meetup/Youtube talk</strong><br />Brief one or two sentance description<br /><span class="url-text"><strong>Video:</strong><br /><a href="https://youtu.be/example">youtu.be/example</a><br /></span><span class="url-text"><strong>Slides:</strong><br /><a href="https://example.com/talk-slides">example.com/talk-slides</a><br /></span></p><p class="portfolio"><strong>Second Talk</strong><br />As many as you like<br /></p><h3>Open Source</h3><section class="portfolio full"><article><div class="label"><strong>thing-name</strong> (<a href="https://example.com/thing-name">example.com/thing-name</a>)
+      </div><img class="lang" src="images/nodejs.png" alt="Node.js" /><br />A description of the thing</article><article><div class="label">other-thing (<a href="https://example.com/other-thing">example.com/other-thing</a>)
+      </div><img class="lang" src="images/c.svg" alt="C" /><br />Another description of a thing<br />A description of your patch</article></section></div></body></html>
